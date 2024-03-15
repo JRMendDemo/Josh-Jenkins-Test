@@ -1,4 +1,4 @@
-def mendSASTScan() { 
+def call() { 
                 echo 'Start Mend Code Scan'
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
                 sh '''
