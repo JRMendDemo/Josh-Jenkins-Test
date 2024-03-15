@@ -1,4 +1,4 @@
-def mendSCAScan() { 
+def call() { 
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
                 sh '''
                 WS_PROJECTTOKEN=$(grep -oP "(?<=token=)[^&]+" ${PWD}/dep-results.txt)
