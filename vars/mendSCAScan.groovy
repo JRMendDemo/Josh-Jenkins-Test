@@ -1,4 +1,4 @@
-def mendSCAScan() { 
+def call() { 
       echo 'Run Mend dependencies scan'
       catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
       sh '''
