@@ -7,4 +7,5 @@ def mendSCAScan() {
       ./mend dep -u -s *//${JOB_NAME}//${repo}_${branch} --fail-policy --non-interactive --export-results dep-results.txt
       '''
       archiveArtifacts artifacts: "dep-results.txt", fingerprint: true
+      }
 }
